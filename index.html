@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
 
@@ -18,9 +19,12 @@
         <div class="container-header">
             <div class="logo">
                 <img src="./img/lokalise.png" alt="logo">
+                <a href="#" class="menu-button" onclick="menuBar()">
+                <img src="./img/free-icon-menu-1250975.png" alt="">
+                </a>
             </div>
-            <div class="header-menu">
-                <nav>
+            <div class="header-menu" id="menu-header">
+                <nav >
                     <ul>
                         <li>
                             <a href="#">Product</a>
@@ -39,11 +43,11 @@
                         </li>
                     </ul>
                 </nav>
+            </div>
                 <div class="header-buttons">
                     <a href="#" class="btn-white header-btn">Log in</a>
                     <a href="#" class="btn-orange header-btn">Try it free</a>
                 </div>
-            </div>
         </div>
     </div>
 </header>
@@ -123,7 +127,7 @@
                     <h4>Web apps</h4>
                     <p>Any kind of web apps — backend,<br>frontend, single page, blogs — you<br>name it.</p>
                 </div>
-                <div class="localize-box middle" style="margin-bottom: 57px;">
+                <div class="localize-box middle mobileapps" style="margin-bottom: 57px;">
                     <img src="./img/mobile_apps.png" alt="7">
                     <h4>Mobile apps</h4>
                     <p>Upload any mobile platform language files. Embed <a href="#" class="text-link">Lokalise iOS SDK</a> or <a href="#" class="text-link">Lokalise Android SDK</a> if you prefer. </p>
@@ -298,5 +302,16 @@
         </div>
     </div>
 </footer>
+
+<script>
+    function menuBar(){
+        let x = document.getElementById("menu-header");
+        if (x.style.display === "flex"){
+            x.style.display = "none";
+        } else{
+            x.style.display = "flex";
+        }
+    }
+</script>
 </body>
 </html>

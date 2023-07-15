@@ -7,12 +7,13 @@ a{
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    padding: 25px 0;
+    padding: 25px 10px;
 }
 
 .logo{
     display: flex;
     align-items: center;
+    margin-right: 51px;
 }
 .header-menu{
     width: 1157px;
@@ -22,15 +23,27 @@ a{
 }
 
 nav>ul{
-    width: 592px;
+    max-width: 592px;
     display: flex;
     justify-content: space-around;
 }
 
+nav>ul>li{
+    margin-right: 42px;
+}
+
+nav>ul>li:last-child{
+    margin-right: 0;
+}
+
 .header-buttons{
-    width: 260px;
+    max-width: 260px;
     display: flex;
     justify-content: space-between;
+}
+
+.header-buttons>a:last-child{
+    margin-left: 10px;
 }
 
 .btn-white{
@@ -58,4 +71,9 @@ nav>ul{
 
 .header-wrapper{
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.menu-button>img {
+    width: 35px;
+    display: none;
 }
